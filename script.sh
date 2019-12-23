@@ -27,5 +27,7 @@ cp $1 app.apk
 #go to app decompiled directory
 cd app
 
+echo Searching Hard Coded Strings in decompiled apk.....
+
 #search recursively hard coded strings
-grep -r -E "PASSWORD|API_KEY|api_key"
+grep -r -E "\"[\w\s]*\""
