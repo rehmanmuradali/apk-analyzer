@@ -8,16 +8,15 @@ https://github.com/rehmanmuradali/android-security-guides
 Current work includes decompiling and checking all Hard-Coded Strings in an apk.
 
 ## Dependencies
- 1) Python
- 2) Git
- 3) Maven(mvn)
+ 1) Git
+ 2) Maven(mvn)
  
 ## Installation
 Just run script.sh 
 
 Windows
 ```
-bash script.sh path/to/apk
+script.bat path/to/apk
 ```
 
 Linux
