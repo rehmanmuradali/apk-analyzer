@@ -1,33 +1,32 @@
 echo Hello World
 
-
 if [ $1 -eq 0]
 then
 	echo "No argument supplied"
-	exit
+	exit 1
 fi
 
 #clone repo
 
-git clone https://github.com/lxdvs/apk2gold
+git clone https://github.com/skylot/jadx.git
 
 # change dir
-cd apk2gold
+cd jadx
 
-#run make.sh
-. make.sh	
+#run gradlew dist
+./gradlew dist	
 
 #copy apk to current directory
 cp $1 app.apk
 
-#run apk2gold
-. apk2gold app.apk
+#run jadx
+build/jadx/bin/jadx app.apk
 
 
 #go to app decompiled directory
-cd app
+cd app/sources/com
 
 echo Searching Hard Coded Strings in decompiled apk.....
 
 #search recursively hard coded strings
-grep -r -E "\"[\w\s]*\""
+grep -r -E "\".*\""
