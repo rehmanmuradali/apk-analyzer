@@ -12,7 +12,7 @@ Current work includes decompiling and checking all Hard-Coded Strings in an apk.
  2) Maven(mvn)
  
 ## Installation
-Just run script.sh 
+Just run script
 
 Windows
 ```
