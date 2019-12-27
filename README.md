@@ -7,6 +7,10 @@ https://github.com/rehmanmuradali/android-security-guides
 
 Current work includes decompiling and checking all Hard-Coded Strings in an apk.
 
+## Screenshot 
+![Screenshot](hard-coded-strings.PNG)
+
+
 ## Dependencies
  1) Git
  2) Maven(mvn)
