@@ -1,3 +1,6 @@
+[![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-Apk%20Vulnerabilities%20Analyzer-green.svg?style=flat )]( https://android-arsenal.com/details/1/7994 )
+
+
 # Apk Vulnerabilites Analyzer
 This library is to provide a unified platform which decompile Android APK and analyze all security vulnerabilities. 
 
